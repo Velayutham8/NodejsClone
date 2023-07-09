@@ -12,58 +12,74 @@
     <div>
       <!-- Header section -->
       <header>
-        <div class="bg-blue-950 flex justify-between">
+        <div class="dark-HF-background flex justify-between" id="header">
           <!-- icon -->
           <img src="./assets/logo.svg" alt="nodeicon" class="h-10 px-5 py-1" />
           <!-- nav bars items -->
           <nav
             class="flex text-gray-300 font-mono text-sm text-center px-4 items-center"
           >
-            <a href="#" class="mx-2">HOME</a>
+            <a href="#" id="hometext" class="headernav">HOME</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">ABOUT</a>
+            <a href="#" class="headernav">ABOUT</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">DOWNLOADS</a>
+            <a href="#" class="headernav">DOWNLOADS</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">DOCS</a>
+            <a href="#" class="headernav">DOCS</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">GET INVOLVED</a>
+            <a href="#" class="headernav">GET INVOLVED</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">SECURITY</a>
+            <a href="#" class="headernav">SECURITY</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">CERTIFICATION</a>
+            <a href="#" class="headernav">CERTIFICATION</a>
             <span>|</span>
 
-            <a href="#" class="mx-2">NEWS</a>
+            <a href="#" class="headernav">NEWS</a>
           </nav>
           <!-- dark/light switch icon -->
           <div class="flex mr-0 px-2 py-0 items-center cursor-pointer">
-            <img
-              src="./assets/light-mode.svg"
-              alt="lightmodeicon"
-              class="h-7 mx-2"
-            />
+            <div id="modes-theme">
+              <img
+                src="./assets/light-mode.svg"
+                alt="lightmodeicon"
+                id="lighticon"
+                class="h-7 mx-2"
+              />
+              <img
+                src="./assets/dark-mode.svg"
+                alt="darkmodeicon"
+                id="darkicon"
+                class="h-7 mx-2 hidden"
+              />
+            </div>
             <!-- <img src="./assets/dark-mode.svg" alt="darkmodeicon" class="h-7 mx-2" /> -->
             <img
               src="./assets/language-picker.svg"
               alt="languageselectionicon"
               class="h-7"
+              id="langicon"
             />
+            <!-- Language div -->
+            <div
+              class="dark-HF-background text-white h-fit w-32 hidden absolute top-10 right-5 z-10 p-2 text-center"
+              id="language"
+            ></div>
           </div>
         </div>
       </header>
       <!-- Main page -->
       <div
-        class="bg-gray-950 absolute h-3/4 w-full text-white text-center font-sans"
+        class="dark-body absolute h-3/4 w-full text-center font-sans"
+        id="body"
       >
         <!-- duplicate code remove in below line later -->
-        <h3 class="text-center font-sans text-white mt-12 text-lg">
+        <h3 class="text-center font-sans mt-12 text-lg">
           Node.js® is an open-source, cross-platform JavaScript runtime
           environment.
         </h3>
@@ -77,7 +93,7 @@
 
         <h1 class="text-3xl font-serif mt-6">Download for Linux (x64)</h1>
         <!-- download section -->
-        <div class="flex justify-center mt-4">
+        <div class="flex justify-center mt-4 text-white">
           <a
             href="#"
             class="bg-[#026e00] rounded-md h-20 w-64 p-4 mx-3 hover:bg-[#397938]"
@@ -97,44 +113,20 @@
         <div class="flex justify-center text-sm mt-0 text-[#84ba64] p-2">
           <!-- links section for stable downloads -->
           <div class="mx-4">
-            <a
-              href="#"
-              class="hover:text-white hover:underline decoration-[#84ba64]"
-              >other Downloads</a
-            >
+            <a href="#" class="versionlinks">other Downloads</a>
             <span>|</span>
-            <a
-              href="#"
-              class="hover:text-white hover:underline decoration-[#84ba64]"
-              >Changelog</a
-            >
+            <a href="#" class="versionlinks">Changelog</a>
             <span>|</span>
-            <a
-              href="#"
-              class="hover:text-white hover:underline decoration-[#84ba64]"
-              >API Docs</a
-            >
+            <a href="#" class="versionlinks">API Docs</a>
           </div>
 
           <!-- links section for stable downloads -->
           <div class="mx-4">
-            <a
-              href="#"
-              class="hover:text-white hover:underline decoration-[#84ba64]"
-              >other Downloads</a
-            >
+            <a href="#" class="versionlinks">other Downloads</a>
             <span>|</span>
-            <a
-              href="#"
-              class="hover:text-white hover:underline decoration-[#84ba64]"
-              >Changelog</a
-            >
+            <a href="#" class="versionlinks">Changelog</a>
             <span>|</span>
-            <a
-              href="#"
-              class="hover:text-white hover:underline decoration-[#84ba64]"
-              >API Docs</a
-            >
+            <a href="#" class="versionlinks">API Docs</a>
           </div>
         </div>
         <h3 class="mt-4 text-lg">
@@ -148,7 +140,10 @@
       </div>
 
       <!-- Footer section -->
-      <footer class="bg-blue-950 absolute bottom-0 h-32 w-full">
+      <footer
+        class="dark-HF-background absolute bottom-0 h-32 w-full"
+        id="footer"
+      >
         <div>
           <p class="text-white text-xs text-center mt-6">
             Copyright OpenJS Foundation and Node.js contributors. All rights
@@ -162,40 +157,25 @@
             them.
           </p>
           <div class="flex justify-center text-blue-300 text-sm mt-4">
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >The OpenJS Foundation</a
-            >
+            <a href="#" class="footernav">The OpenJS Foundation</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Terms of Use</a
-            >
+            <a href="#" class="footernav">Terms of Use</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Privacy Policy</a
-            >
+            <a href="#" class="footernav">Privacy Policy</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Bylaws</a
-            >
+            <a href="#" class="footernav">Bylaws</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Code of Conduct</a
-            >
+            <a href="#" class="footernav">Code of Conduct</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Trademark Policy</a
-            >
+            <a href="#" class="footernav">Trademark Policy</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Trademark List</a
-            >
+            <a href="#" class="footernav">Trademark List</a>
             <span>|</span>
-            <a href="#" class="hover:underline decoration-blue-600 mx-1"
-              >Cookie Policy</a
-            >
+            <a href="#" class="footernav">Cookie Policy</a>
           </div>
         </div>
       </footer>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
