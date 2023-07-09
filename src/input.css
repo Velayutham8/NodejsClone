@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    /* HF - Header Footer */
+    .light-HF-background {
+        @apply bg-[#333]
+    }
+
+    .dark-HF-background {
+        @apply bg-blue-950
+    }
+
+    .light-body {
+        @apply bg-white text-black
+    }
+
+    .dark-body {
+        @apply bg-gray-950 text-white
+    }
+
+    .headernav {
+        @apply mx-2 hover:underline
+    }
+
+    .footernav {
+        @apply hover:underline decoration-blue-600 mx-1
+    }
+/* links under the version menu */
+    .versionlinks {
+        @apply /* hover:text-white */ hover:underline decoration-[#84ba64]
+    }
+
+}
