@@ -22,7 +22,7 @@
     }
 
     .headernav {
-        @apply mx-2 hover:underline
+        @apply mx-2 hover:underline pl-4 mt-2 medium:mt-0
     }
 
     .footernav {
