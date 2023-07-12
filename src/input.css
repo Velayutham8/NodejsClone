@@ -26,7 +26,7 @@
     }
 
     .footernav {
-        @apply hover:underline decoration-blue-600 mx-1
+        @apply hover:underline pl-2 decoration-blue-600 mx-1
     }
 /* links under the version menu */
     .versionlinks {

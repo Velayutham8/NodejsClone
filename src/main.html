@@ -24,7 +24,7 @@
           />
           <!-- nav bars items -->
           <nav
-            class="grid grid-cols-2 grid-rows-4 medium:flex text-gray-300 font-mono text-sm text-center px-4 items-center medium:divide-x divide-gray-400"
+            class="grid grid-cols-2 grid-rows-4 medium:inline-block pt-4 text-gray-300 font-mono text-sm text-center px-4 items-center medium:divide-x divide-gray-400"
           >
             <a href="#" id="hometext" class="headernav">HOME</a>
 
@@ -67,27 +67,27 @@
               class="h-7"
               id="langicon"
             />
-            <!-- Language div -->
-            <div
-              class="dark-HF-background text-white h-fit w-32 hidden absolute top-10 right-5 z-10 p-2 text-center"
-              id="language"
-            ></div>
           </div>
+          <!-- Language div -->
+          <div
+            class="relative grid grid-cols-2 gap-x-2 hidden dark-HF-background text-white medium:grid-cols-2 large:grid-cols-1 large:h-fit large:w-32 large:absolute large:top-10 large:right-5 z-10 p-2 text-center"
+            id="language"
+          ></div>
         </div>
       </header>
       <!-- Main page -->
       <div
-        class="dark-body px-2 medium:absolute medium:h-3/4 w-full text-center font-sans"
+        class="dark-body px-2 large:absolute large:h-3/4 w-full text-center font-sans"
         id="body"
       >
         <!-- duplicate code remove in below line later -->
         <h3
-          class="text-center inline-flex mt-12 font-sans pt-10 medium:pt-4 medium:mt-12 text-lg"
+          class="text-center block pt-12 font-sans large:pt-4 large:mt-12 text-lg"
         >
           Node.js® is an open-source, cross-platform JavaScript runtime
           environment.
         </h3>
-        <p class="bg-[#212f2b] block w-fit h-fit p-2 mt-12 medium:mt-12">
+        <p class="bg-[#212f2b] inline-grid w-fit h-fit p-2 mt-12 medium:mt-12">
           <a
             class="text-2xl h-fit medium:mx-28 text-[#84ba64] hover:text-white hover:bg-[#507c36] hover:h-fit hover:rounded-md hover:cursor-pointer"
           >
@@ -154,11 +154,11 @@
 
       <!-- Footer section -->
       <footer
-        class="dark-HF-background h-fit medium:absolute bottom-0 medium:h-32 medium:pt-5 w-full"
+        class="dark-HF-background h-fit p-2 large:absolute bottom-0 large:h-32 large:pt-5 w-full"
         id="footer"
       >
         <div>
-          <p class="text-white text-xs text-center pt-6 medium:pt-0">
+          <p class="text-white text-xs text-center pt-6 large:pt-0">
             Copyright OpenJS Foundation and Node.js contributors. All rights
             reserved. The OpenJS Foundation has registered trademarks and uses
             trademarks. For a list of trademarks <br />
@@ -169,21 +169,16 @@
             Use of them does not imply any affiliation with or endorsement by
             them.
           </p>
-          <div class="flex justify-center text-blue-300 text-sm mt-4">
+          <div
+            class="flex-wrap p-4 medium:p-0 text-center medium:flex justify-center text-blue-300 text-sm mt-4 divide-x divide-gray-400"
+          >
             <a href="#" class="footernav">The OpenJS Foundation</a>
-            <span>|</span>
             <a href="#" class="footernav">Terms of Use</a>
-            <span>|</span>
             <a href="#" class="footernav">Privacy Policy</a>
-            <span>|</span>
             <a href="#" class="footernav">Bylaws</a>
-            <span>|</span>
             <a href="#" class="footernav">Code of Conduct</a>
-            <span>|</span>
             <a href="#" class="footernav">Trademark Policy</a>
-            <span>|</span>
             <a href="#" class="footernav">Trademark List</a>
-            <span>|</span>
             <a href="#" class="footernav">Cookie Policy</a>
           </div>
         </div>

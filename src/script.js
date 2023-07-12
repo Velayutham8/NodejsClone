@@ -59,6 +59,7 @@ allLanguageElement.forEach((el) => {
 
 //List a language into p tag inside div
 langIcon.addEventListener('click', () => {
+  console.log('22222222222', languageContainer);
   languageContainer.classList.toggle('hidden');
 });
 
